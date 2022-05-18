@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DenSay’lyq</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="doctor-page/style-doc.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="#about">about</a>
+        <a href="#doctors">doctors</a>
+        <a href="#review">review</a>
+
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="image">
+        <img src="image-doc/doctor.png" alt="">
+    </div>
+
+    <div class="content">
+        <h3>Ваше здоровье –</h3>
+        <h3>    наша высшая ценность</h3>
+        <p>Следить за своим здоровьем важно и никогда не поздно!</p>
+
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>#Медицина </span>  для каждого! </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="image-doc/about-img.svg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Мы Заботимся О Вашем Здоровом Образе Жизни</h3>
+            <p>История «Densaylyq» началась в 2022 году с небольшой компании друзей. На сегодняшний день мы – многопрофильный медицинский центр, предоставляющий широкий спектр услуг, направленных на восстановление здоровья пациентов. </p>
+            <p>Сотрудничество с лучшими врачами профессионалами предоставляет качественные медицинские услуги, с использованием современной аппаратуры, а также новейшими методиками лечения и диагностики.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- doctors section starts  -->
+
+<section class="doctors" id="doctors">
+
+    <h1 class="heading"> Наши <span>доктора</span> </h1>
+
+    <div class="box-container">
+
+        <% doctors.forEach(doctor => { %>
+            <div class="box">
+                <img src="<%= doctor.imagelink %>" alt="">
+                <h3><%= doctor.fullname %></h3>
+                <span><%= doctor.position %></span>
+                <div class="share">
+    
+                    <a href="<%= doctor.instalink %>" class="fab fa-instagram"></a>
+    
+                </div>
+            </div>
+      <% }) %>
+    </div>
+
+</section>
+
+<!-- doctors section ends -->
+
+
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading">От<span>зывы</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image-doc/бегемот.png" alt="">
+            <h3>Мистер Бегемот</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis libero nobis rem numquam nesciunt alias sapiente minus voluptatem, reiciendis consequuntur optio dolorem!</p>
+        </div>
+
+        <div class="box">
+            <img src="image-doc/овца.png" alt="">
+            <h3>Мисс Овечка</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis libero nobis rem numquam nesciunt alias sapiente minus voluptatem, reiciendis consequuntur optio dolorem!</p>
+        </div>
+
+        <div class="box">
+            <img src="image-doc/панда.png" alt="">
+            <h3>Мистер По</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis libero nobis rem numquam nesciunt alias sapiente minus voluptatem, reiciendis consequuntur optio dolorem!</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+
+<!-- custom js file link  -->
+<script src="/javascript/script-doc.js"></script>
+
+</body>
+</html>

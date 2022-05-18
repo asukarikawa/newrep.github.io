@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sing up</title>
+</head>
+<body>
+       <!-- <div>
+            <form  action = "/login" method = "post">
+                <h1 class="registrationhead">Log in</h1>
+                <input class="emailinput" type="text" name="usernamelog" value="" placeholder="Username" id="usernamelog" required>
+                <input class="emailinput" type="password" name="passwordlog" value="" placeholder="Password" id="passwordlog" required>
+                <input type="submit" name="button" class="registerbutton" value = "Log in">
+            </form>
+      </div> -->
+  
+      <div class="signup">
+            <form action = "/signupin" method = "post">
+                <h1 class="registrationhead">Registration</h1>
+                <input class="emailinput" type="text" name="username" value="" placeholder="Username" id="username" required>
+                <input class="emailinput" type="password" name="password" value="" placeholder="Password" id="password" required>
+                <input class="emailinput" type="text" name="name" value="" placeholder="Name" id="name" required>
+                <input class="emailinput" type="text" name="city" value="" placeholder="City" id="city" required>
+                <input class="emailinput" type="text" name="email" value="" placeholder="E-mail" id="email" required>
+                <input type="submit" name="button" class="registerbutton" value = "Sign up">
+            </form>
+      </div>
+      <div class="signup">
+        <form action = "/admin" method = "post">
+            <h1 class="registrationhead">Admin Access</h1>
+            <input class="emailinput" type="password" name="password" value="" placeholder="Password" id="password" required>
+            <input type="submit" name="button" class="registerbutton" value = "Log in">
+        </form>
+  </div>
+</body>
+</html>
