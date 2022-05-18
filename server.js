@@ -16,7 +16,7 @@ const passwordValidator = require('password-validator');
 const PORT = config.get('port') 
 
 
-app.listen(PORT, () => console.log('server running'))
+app.listen(process.env.PORT || 5000)
 app.use(bodyParser.json());
 app.use(express.static('site'))
 app.use(bodyParser.urlencoded({
